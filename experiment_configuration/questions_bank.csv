@@ -11,3 +11,11 @@ Demo_block_3,1,1,Demo_q9,Which study materials would you replace first: page tex
 Demo_block_4,1,1,Demo_q11,<strong>Example block 4.</strong> These are single-select multiple-choice questions with one answer chosen from a fixed set of options.,0,0,0,0,1,
 Demo_block_4,1,1,Demo_q12,Which TRI-CA configuration area would you most likely edit first?,0,0,0,1,0,questions_bank.csv|experiment_desc.csv|treatment_groups_config.csv|hidden_prompts_bank/
 Demo_block_4,1,1,Demo_q13,Which response format would be most useful in your study?,0,0,0,1,0,Single Likert item|Grouped Likert block|Open-ended text|A mix of several formats
+demographics,0,0,demographic_0,,0,0,0,0,1,
+demographics,0,0,age,What is your age range?,0,0,0,1,0,
+demographics,0,0,occupation,What is your current occupation? Select all that apply.,1,0,0,0,0,
+demographics,0,0,field,What is your primary field of work or study? (optional),1,0,0,0,0,
+demographics,0,0,gender,What is your gender?,0,0,0,1,0,Option 1|Option 2|Option 3|Option 4
+demographics,0,0,education,What is the highest level of education you have completed?,0,0,0,1,0,Option 1|Option 2|Option 3|Option 5
+demographics,0,0,ai_use,"How often do you use AI tools (for example, ChatGPT, Claude, or similar tools) in a typical week?",0,0,0,1,0,Option 1|Option 2|Option 3|Option 6
+demographics,0,0,device,"On average, how many hours per day do you use digital devices such as a phone, laptop, or tablet?",0,0,0,1,0,Option 1|Option 2|Option 3|Option 7

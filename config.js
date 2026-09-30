@@ -29,5 +29,5 @@ config.encodeBase64 = parseInt(process.env['BASE64_ENCODE'] || '0') !== 0;
 config.sessionSecret = process.env['SESSION_SECRET'] || crypto.randomBytes(32).toString('hex');
 
 // secret code ... temporary
-config.reusableCode = process.env['REUSABLE_CODE'];
+config.reusableCode = process.env['REUSABLE_CODE'] || 'F26-B';
 module.exports = config;
