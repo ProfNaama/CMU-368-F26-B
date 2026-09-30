@@ -12,10 +12,37 @@ Demo_block_4,1,1,Demo_q11,<strong>Example block 4.</strong> These are single-sel
 Demo_block_4,1,1,Demo_q12,Which TRI-CA configuration area would you most likely edit first?,0,0,0,1,0,questions_bank.csv|experiment_desc.csv|treatment_groups_config.csv|hidden_prompts_bank/
 Demo_block_4,1,1,Demo_q13,Which response format would be most useful in your study?,0,0,0,1,0,Single Likert item|Grouped Likert block|Open-ended text|A mix of several formats
 demographics,0,0,demographic_0,,0,0,0,0,1,
-demographics,0,0,age,What is your age range?,0,0,0,1,0,
-demographics,0,0,occupation,What is your current occupation? Select all that apply.,1,0,0,0,0,
-demographics,0,0,field,What is your primary field of work or study? (optional),1,0,0,0,0,
-demographics,0,0,gender,What is your gender?,0,0,0,1,0,Option 1|Option 2|Option 3|Option 4
-demographics,0,0,education,What is the highest level of education you have completed?,0,0,0,1,0,Option 1|Option 2|Option 3|Option 5
-demographics,0,0,ai_use,"How often do you use AI tools (for example, ChatGPT, Claude, or similar tools) in a typical week?",0,0,0,1,0,Option 1|Option 2|Option 3|Option 6
-demographics,0,0,device,"On average, how many hours per day do you use digital devices such as a phone, laptop, or tablet?",0,0,0,1,0,Option 1|Option 2|Option 3|Option 7
+demographics,0,0,age,What is your age range?,0,0,0,1,0,Under 18|18 to 24|25 to 34|35 to 44|45 to 54|55 or older|Prefer not to say
+demographics,0,0,occupation,What is your current occupation? Select all that apply.,0,0,0,1,0,Student|Employed full time|Employed part time|Self-employed|Not currently employed|Prefer not to say
+demographics,0,0,gender,What is your gender?,0,0,0,1,0,Female|Male|Non-binary|Other|Prefer not to say
+demographics,0,0,education,What is the highest level of education you have completed?,0,0,0,1,0,"Some high school, no diploma|High school diploma or equivalent|Some college, no degree|Associate degree|Bachelor's degree|Master's degree|Doctorate degree|Prefer not to say"
+demographics,0,0,ai_use,"How often do you use AI tools (for example, ChatGPT, Claude, or similar tools) in a typical week?",0,0,0,1,0,Never|Less than once a week|A few times a week|Once a day|Multiple times a day
+demographics,0,0,device,"On average, how many hours per day do you use digital devices such as a phone, laptop, or tablet?",0,0,0,1,0,Less than 1 hour|1 to 2 hours|3 to 4 hours|5 to 6 hours|7 to 8 hours|9 to 10 hours|More than 10 hours
+prior_skill,0,0,prior_skill_0,"The following questions ask about your experience with three types of tasks before this study. Please answer based on your experience in general, not based on anything you did today.",0,0,0,0,1,
+prior_skill,0,0,prior_skill_writing,"How would you describe your experience with writing tasks, such as writing essays, emails, reports, or short texts?",0,0,1,0,0,No experience at all|A great deal of experience
+prior_skill,0,0,prior_skill_coding,"How would you describe your experience with coding tasks, such as writing or editing computer code in any programming language?",0,0,1,0,0,No experience at all|A great deal of experience
+prior_skill,0,0,prior_skill_design,"How would you describe your experience with visual design tasks, such as creating images, graphics, layouts, or visual content?",0,0,1,0,0,No experience at all|A great deal of experience
+satisfaction_writing,0,0,satisfaction_writing_0,The following questions ask about the output from the writing task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,
+satisfaction_writing,0,0,satisfaction_writing_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied
+satisfaction_writing,0,0,satisfaction_writing_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well
+satisfaction_writing,0,0,satisfaction_writing_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable
+satisfaction_coding,0,0,satisfaction_coding_0,The following questions ask about the output from the coding task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,
+satisfaction_coding,0,0,satisfaction_coding_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied
+satisfaction_coding,0,0,satisfaction_coding_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well
+satisfaction_coding,0,0,satisfaction_coding_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable
+satisfaction_design,0,0,satisfaction_design_0,The following questions ask about the output from the visual design task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,
+satisfaction_design,0,0,satisfaction_design_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied
+satisfaction_design,0,0,satisfaction_design_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well
+satisfaction_design,0,0,satisfaction_design_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable
+manipcheck_writing,0,0,manipcheck_writing_0,The following questions ask about how the AI behaved during the writing task. Please answer based on what actually happened.,0,0,0,0,1,
+manipcheck_writing,0,0,manipcheck_writing_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree
+manipcheck_writing,0,0,manipcheck_writing_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree
+manipcheck_coding,0,0,manipcheck_coding_0,The following questions ask about how the AI behaved during the coding task. Please answer based on what actually happened.,0,0,0,0,1,
+manipcheck_coding,0,0,manipcheck_coding_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree
+manipcheck_coding,0,0,manipcheck_coding_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree
+manipcheck_design,0,0,manipcheck_design_0,The following questions ask about how the AI behaved during the visual design task. Please answer based on what actually happened.,0,0,0,0,1,
+manipcheck_design,0,0,manipcheck_design_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree
+manipcheck_design,0,0,manipcheck_design_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree
+attention,0,0,attention_1,Select the far left option.,0,0,1,0,0,Strongly disagree|Strongly agree
+attention,1,0,attention_2,Select the option that represents strongly agree.,0,0,1,0,0,Strongly disagree|Strongly agree
+comments,0,0,comments_1,Is there anything else you would like to share about your experience in this study? (optional),1,0,0,0,0,
