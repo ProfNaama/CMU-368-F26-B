@@ -13,7 +13,7 @@ Demo_block_4,1,1,Demo_q12,Which TRI-CA configuration area would you most likely 
 Demo_block_4,1,1,Demo_q13,Which response format would be most useful in your study?,0,0,0,1,0,Single Likert item|Grouped Likert block|Open-ended text|A mix of several formats
 demographics,0,0,demographic_0,,0,0,0,0,1,
 demographics,0,0,age,What is your age range?,0,0,0,1,0,Under 18|18 to 24|25 to 34|35 to 44|45 to 54|55 or older|Prefer not to say
-demographics,0,0,occupation,What is your current occupation? Select all that apply.,0,0,0,1,0,Student|Employed full time|Employed part time|Self-employed|Not currently employed|Prefer not to say
+demographics,0,0,occupation,What is your current occupation?,0,0,0,1,0,Student|Employed full time|Employed part time|Self-employed|Not currently employed|Prefer not to say
 demographics,0,0,gender,What is your gender?,0,0,0,1,0,Female|Male|Non-binary|Other|Prefer not to say
 demographics,0,0,education,What is the highest level of education you have completed?,0,0,0,1,0,"Some high school, no diploma|High school diploma or equivalent|Some college, no degree|Associate degree|Bachelor's degree|Master's degree|Doctorate degree|Prefer not to say"
 demographics,0,0,ai_use,"How often do you use AI tools (for example, ChatGPT, Claude, or similar tools) in a typical week?",0,0,0,1,0,Never|Less than once a week|A few times a week|Once a day|Multiple times a day
