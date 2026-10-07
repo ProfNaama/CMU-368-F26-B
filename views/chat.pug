@@ -4,18 +4,22 @@ block content
 
     div(class='task_description')!=task_description
 
+    p(class="task-timer")
+        button(type="button" id="startTask") Start Task
+        span(id="taskClock" class="task-clock" aria-live="polite") 10:00
+
     div(id="conversation", class="conversation")
     form(id="chatForm")
         label(for="message") User Text
-        input(type="text" class="form-text-input" id="message" placeholder="Type your message here" required)
-        input(type="submit" value="Send")
-    
+        input(type="text" class="form-text-input" id="message" placeholder="Click Start Task first" required disabled)
+        input(type="submit" id="sendButton" value="Send" disabled)
+
     br
 
     form(id="chatEndedForm" method='POST' action='/submit_user_response')
         input(type="hidden", name="form_type", value=form_type)
         br
-        input(type="submit" value="End Chat")
+        input(type="submit" id="finishTask" value="Finish Task" disabled)
     br
 
     script.
@@ -65,9 +69,47 @@ block content
 
             updateConversationScroll();
         }
-    
+
+        const TASK_SECONDS = 10 * 60;
+
+        // Counts down from 10:00. At zero it shows a message but keeps the chat open.
+        function startTimer() {
+            const clock = document.getElementById("taskClock");
+            const endTime = Date.now() + TASK_SECONDS * 1000;
+            const tick = setInterval(function () {
+                const secondsLeft = Math.max(0, Math.round((endTime - Date.now()) / 1000));
+                const minutes = Math.floor(secondsLeft / 60);
+                const seconds = secondsLeft % 60;
+                clock.textContent = minutes + ":" + String(seconds).padStart(2, "0");
+                if (secondsLeft === 0) {
+                    clearInterval(tick);
+                    clock.textContent = "Time is up. Please finish your task and click Finish Task.";
+                    clock.classList.add("task-clock-done");
+                }
+            }, 250);
+        }
+
+        // Unlocks the chat, starts the timer, and sends the task's start message.
+        function startTask() {
+            $("#startTask").prop("disabled", true).text("Task started");
+            $("#message, #sendButton, #finishTask").prop("disabled", false);
+            $("#message").attr("placeholder", "Type your message here");
+            startTimer();
+            const startMessage = $("#taskStartMessage").text().trim();
+            if (startMessage) {
+                $("#message").val(startMessage);
+                $("#chatForm").trigger("submit");
+            }
+        }
+
         $(document).ready(function(){
-            addAgentText("Hi! Are you ready to start?");
+            addAgentText("Hi! Click Start Task when you are ready.");
+            $("#startTask").on("click", startTask);
+            $("#chatEndedForm").on("submit", function (e) {
+                if (!confirm("Are you finished with your task? You cannot go back to the chat after this.")) {
+                    e.preventDefault();
+                }
+            });
             $('#chatForm').on('submit', function(e){
                 e.preventDefault();
                 $("#conversation").children().removeClass("chat-last");
