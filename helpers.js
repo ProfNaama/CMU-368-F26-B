@@ -178,7 +178,8 @@ function getUserTestQuestions(req, csv_header) {
                     "is_likert": parseBoolean(record["is_likert"]),
                     "is_grouped_likert": parseBoolean(record["is_grouped_likert"]),
                     "is_multi_choice": parseBoolean(record["is_multi_choice"]), 
-                    "is_label": parseBoolean(record["is_label"]), 
+                    "is_label": parseBoolean(record["is_label"]),
+                    "is_optional": parseBoolean(record["is_optional"]),
                     "choices": record["options"]?.split("|").map(o => o.trim()) || []
                 };
 

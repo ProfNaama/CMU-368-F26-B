@@ -71,6 +71,11 @@
     flex-direction: row;
 }
 
+/* Keep line breaks and code indentation in chat messages. */
+.chat-user p, .chat-agent p {
+    white-space: pre-wrap;
+}
+
 .agent-card, .user-card {
     display: flex;
     flex-direction:column;
@@ -273,10 +278,12 @@ input[type=submit] {
 }
 
 #message {
-    border-radius: 12px;  
+    border-radius: 12px;
     border: 1px solid gray;
     padding-right: 10px;
-    width: 40%;
+    width: 60%;
+    resize: vertical;
+    vertical-align: middle;
 }
 
 #avaterSelect {

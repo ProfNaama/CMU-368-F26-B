@@ -11,7 +11,7 @@ block content
     div(id="conversation", class="conversation")
     form(id="chatForm")
         label(for="message") User Text
-        input(type="text" class="form-text-input" id="message" placeholder="Click Start Task first" required disabled)
+        textarea(class="form-text-input" id="message" rows="3" placeholder="Click Start Task first" required disabled)
         input(type="submit" id="sendButton" value="Send" disabled)
 
     br
@@ -45,7 +45,9 @@ block content
             img_elem.setAttribute("src", preferences_user_avatar);
             UserCard.appendChild(img_elem);
             UserCard.appendChild(document.createTextNode(preferences_user_name));
-            element.appendChild(document.createTextNode(userText));
+            let textElement = document.createElement("p");
+            textElement.textContent = userText;
+            element.appendChild(textElement);
             document.getElementById('conversation').appendChild(element);
             updateConversationScroll();
             $('#chatForm')[0].reset();
@@ -105,6 +107,15 @@ block content
         $(document).ready(function(){
             addAgentText("Hi! Click Start Task when you are ready.");
             $("#startTask").on("click", startTask);
+            // Enter sends the message. Shift+Enter adds a new line.
+            // While an input method (e.g. Chinese, Japanese) is composing, Enter only confirms the text.
+            $("#message").on("keydown", function (e) {
+                const isComposing = e.originalEvent.isComposing || e.keyCode === 229;
+                if (e.key === "Enter" && !e.shiftKey && !isComposing) {
+                    e.preventDefault();
+                    document.getElementById("chatForm").requestSubmit();
+                }
+            });
             $("#chatEndedForm").on("submit", function (e) {
                 if (!confirm("Are you finished with your task? You cannot go back to the chat after this.")) {
                     e.preventDefault();

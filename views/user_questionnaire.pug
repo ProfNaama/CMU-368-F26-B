@@ -3,7 +3,7 @@ extends layout
 mixin text(q) 
     div(class='q_text')
         h3(class="H3_q_Item")!=q["label"]
-        input(type='text', class="form-text-input" name=q["name"], required="required")
+        input(type='text', class="form-text-input" name=q["name"], required=!q["is_optional"])
 
 mixin multichoice(q) 
     h3(class="H3_q_Item")!=q["label"]
