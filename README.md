@@ -466,6 +466,10 @@ This output is intentionally rich and low-level. Researchers can derive scale sc
 - Hidden prompt text in `experiment_configuration/hidden_prompts_bank/`
 - Participant task instructions in `experiment_configuration/user_tasks_bank/`
 
+## Choosing a Version by Link (this study)
+
+Participants are not assigned at random. Each row in `treatment_groups_config.csv` has a `link_code`, and researchers send the link for the version they want, for example `http://localhost:3030/?v=e9xj`. Look up the code in the config to see which task and prompt it uses. The codes are neutral so participants cannot tell which version they are in. A missing or unknown code shows a "This link is not complete" page.
+
 ## What Typically Requires Code Changes
 
 - **CSS**: visual styling changes in `static/stylesheets/style.css`
