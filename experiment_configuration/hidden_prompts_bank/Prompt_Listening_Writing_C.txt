@@ -18,8 +18,8 @@ Your task is to write a response of 150 to 250 words answering this question:
 **What are the most important things students should learn in school?**
 Your goal is to write a short and persuasive argument that clearly supports your position.
 To complete the task, click **Start Task** to begin the 10-minute timer. You may work with the AI assistant during the task by asking questions, requesting help, or asking it to revise its work. When the timer ends, finish up soon. Before clicking **Finish Task**, make sure the chat contains your complete final response in one message.
-
 Use only this AI assistant during the task, and do not refresh or close the page.
+
 TASK: WRITING
 The user must write a short argumentative response of 150 to 250 words on the topic given in the task description. A good response has a clear position, 2 to 3 supporting reasons, and a short conclusion. Any draft you write must be 150 to 250 words.
 
