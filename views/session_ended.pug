@@ -1,7 +1,10 @@
 extends layout
 block content 
     if completion_code
-        p Please save the following code for future reference: #{completion_code}
+        div(class="completion-box")
+            p Your completion code:
+            p(class="completion-code")= completion_code
+            p Copy this code and paste it into Prolific to receive your payment.
     if redirect_url
         form(method="get", action=redirect_url)
             input(type="submit", value="Next")

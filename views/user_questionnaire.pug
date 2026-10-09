@@ -21,13 +21,10 @@ mixin likert(q)
             td(class='Likert_left_scale_culmn') 
                 label= "1 ("+ q["choices"][0] + ")"
             td(class='Likert_radio_culmn')
-                input(type='radio', class="radio_selection" name=q["name"], value="1", required="required")
-                input(type='radio', class="radio_selection" name=q["name"], value="2", required="required")
-                input(type='radio', class="radio_selection" name=q["name"], value="3", required="required")
-                input(type='radio', class="radio_selection" name=q["name"], value="4", required="required")
-                input(type='radio', class="radio_selection" name=q["name"], value="5", required="required")
-                input(type='radio', class="radio_selection" name=q["name"], value="6", required="required")
-                input(type='radio', class="radio_selection" name=q["name"], value="7", required="required") 
+                each n in [1, 2, 3, 4, 5, 6, 7]
+                    label(class="likert-option")
+                        span(class="likert-number")= n
+                        input(type='radio', class="radio_selection" name=q["name"], value=n, required="required")
             td(class='Likert_right_scale_culmn')
                 label= "7 (" + q["choices"][1] + ")" 
 
@@ -48,13 +45,10 @@ mixin grouped_likert(q)
                 td(class='Likert_left_scale_culmn')
                     label="1"
                 td(class='Likert_radio_culmn')
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="1", required="required")
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="2", required="required")
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="3", required="required")
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="4", required="required")
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="5", required="required")
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="6", required="required")
-                    input(type='radio', class="radio_selection" name=name_label_tuple["name"], value="7", required="required") 
+                    each n in [1, 2, 3, 4, 5, 6, 7]
+                        label(class="likert-option")
+                            span(class="likert-number")= n
+                            input(type='radio', class="radio_selection" name=name_label_tuple["name"], value=n, required="required")
                 td(class='Likert_right_scale_culmn')
                     label= "7"
 

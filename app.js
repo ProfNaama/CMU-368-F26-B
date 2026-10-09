@@ -32,6 +32,15 @@ app.use(session({
 
 const maxUID = 100000;
 
+// Progress bar shown at the top of every page: "Step 2 of 6: Consent".
+const PROGRESS_STEPS = ["Access code", "Consent", "About you", "Task", "Questions", "Finish"];
+function addProgress(renderParams, step) {
+    renderParams["progress_step"] = step;
+    renderParams["progress_total"] = PROGRESS_STEPS.length;
+    renderParams["progress_name"] = PROGRESS_STEPS[step - 1];
+    return renderParams;
+}
+
 // Form type constants for unified POST handler
 const POST_RESPONSE_TYPES = {
     WELCOME_CODE: 'welcome_code',
@@ -114,7 +123,7 @@ async function renderSessionCode(req, res, next) {
     if (!sessionManager.getCode()) {
         let renderParams = helpers.getRenderingParamsForPage("welcome_code");
         renderParams["form_type"] = POST_RESPONSE_TYPES.WELCOME_CODE;
-        res.render('./welcome_code', renderParams);
+        res.render('./welcome_code', addProgress(renderParams, 1));
         return;
     }
     next();
@@ -126,7 +135,7 @@ function renderUserConsent(req, res, next) {
     if (!sessionManager.getConsent()) {
         let renderParams = helpers.getRenderingParamsForPage("consent");
         renderParams["form_type"] = POST_RESPONSE_TYPES.CONSENT;
-        res.render('./consent', renderParams);
+        res.render('./consent', addProgress(renderParams, 2));
         return;
     }
     next();
@@ -143,7 +152,7 @@ function renderPreQuestionnaire(req, res, next) {
             renderParams["form_type"] = POST_RESPONSE_TYPES.PRE_QUESTIONNAIRE;
             renderParams["form_submit_botton_text"] = 'Next';
             
-            res.render('./user_questionnaire', renderParams);
+            res.render('./user_questionnaire', addProgress(renderParams, 3));
         }
         else {
             sessionManager.setPreQuestionsAnswers({});
@@ -168,7 +177,7 @@ function renderChat(req, res, next) {
             renderParams["preferences"] = sessionManager.getPreferences();
             renderParams["task_description"] = helpers.getUserTaskDescription(req);
             renderParams["form_type"] = POST_RESPONSE_TYPES.CHAT_ENDED;
-            res.render('./chat', renderParams);
+            res.render('./chat', addProgress(renderParams, 4));
         }
         return;
     }
@@ -184,7 +193,7 @@ function renderChatQuestionnaire(req, res, next) {
         renderParams["form_type"] = POST_RESPONSE_TYPES.POST_QUESTIONNAIRE;
         renderParams["form_submit_botton_text"] = 'Submit';
             
-        res.render('./user_questionnaire', renderParams);
+        res.render('./user_questionnaire', addProgress(renderParams, 5));
         return;
     }
     next();
@@ -367,6 +376,8 @@ function verifySessionEnded(req, res, next) {
             const redirectUrl = sessionManager.getRedirectUrl();
             if (redirectUrl) {
                 renderParams["body_message"] = "Click the 'Next' button to proceed.";
+            } else if (sessionManager.getCompletionCode()) {
+                renderParams["body_message"] = "Copy your completion code below. Then you may close this window.";
             } else {
                 renderParams["body_message"] = "You may now close this window.";
             }   
@@ -382,7 +393,7 @@ function verifySessionEnded(req, res, next) {
             renderParams["redirect_url"] = redirectUrl;
         }
         
-        res.render('./session_ended', renderParams);
+        res.render('./session_ended', addProgress(renderParams, 6));
         
         // Only handle user completion if consent was given, not for consent decline
         if (sessionManager.getConsent()) {

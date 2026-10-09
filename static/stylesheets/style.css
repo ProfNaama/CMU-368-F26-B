@@ -371,3 +371,143 @@ ol {
     border-bottom: 2px solid var(--gray);
     width: 100%;
 }
+
+
+/* Consent form: bold words sit inline, and section headings stand out from the text. */
+.controlled_body strong {
+    margin: 0;
+    padding: 0;
+}
+
+.controlled_body h3 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+/* 1-7 scales: a number above every circle. */
+.Likert_radio_culmn {
+    width: auto;
+    white-space: nowrap;
+}
+
+.LikertItemTable .likert-option {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin: 0 4px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.LikertItemTable .likert-number {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.LikertItemTable .likert-option input {
+    margin: 0;
+}
+
+/* Task page: Start Task, timer and Finish Task stay visible at the top while scrolling. */
+.task-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 2px solid var(--grayBLU);
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.task-bar form {
+    margin: 0 0 0 auto;
+    padding: 0;
+}
+
+.task-clock-label {
+    font-weight: 700;
+}
+
+#startTask {
+    background-color: #1f5fbf;
+    color: #ffffff;
+    border: 2px solid #174a96;
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#startTask:disabled {
+    background-color: #ffffff;
+    color: #1f5fbf;
+    opacity: 1;
+}
+
+#finishTask {
+    background-color: #1a7f37;
+    color: #ffffff;
+    border: 2px solid #14632b;
+    border-radius: 10px;
+    padding: 12px 26px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#finishTask:hover:enabled {
+    background-color: #14632b;
+}
+
+#finishTask:disabled {
+    background-color: #9aa5b1;
+    border-color: #9aa5b1;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+/* Progress bar at the top of every page. */
+.progress-label {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.progress-track {
+    height: 10px;
+    padding: 0;
+    background-color: var(--gray);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1f5fbf;
+    border-radius: 999px;
+}
+
+/* End page: the completion code stands out. */
+.completion-box {
+    border: 2px solid #1a7f37;
+    border-radius: 12px;
+    background-color: #eef8f0;
+}
+
+.completion-code {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-family: monospace;
+}

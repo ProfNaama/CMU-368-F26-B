@@ -10,6 +10,11 @@ html
       div(class="left" )
         h2
       div(class="content" )
+        if progress_step
+          div(class="progress")
+            div(class="progress-label") Step #{progress_step} of #{progress_total}: #{progress_name}
+            div(class="progress-track")
+              div(class="progress-fill" style="width: " + Math.round(progress_step / progress_total * 100) + "%")
         if header_message
           h2(class="controlled_header")!=header_message
         if body_message
