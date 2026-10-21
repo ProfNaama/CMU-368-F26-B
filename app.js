@@ -86,16 +86,10 @@ function verifySystemInitialized(req, res, next) {
 function verifySession(req, res, next) {
     const sessionManager = getSessionManager(req.session);
     if (!sessionManager.isInitialized()) {
-        // The version comes from the link. Without a valid code, do not start a session.
-        const treatmentGroupId = helpers.getTreatmentGroupIdForLinkCode(req.query.v);
-        if (treatmentGroupId === null) {
-            let renderParams = helpers.getRenderingParamsForPage("error");
-            renderParams["header_message"] = "This link is not complete";
-            renderParams["body_message"] = "Please use the exact link you were given.";
-            res.status(400).render('./error', renderParams);
-            return;
-        }
-        const uid = helpers.getRandomInt(0, maxUID).toString();
+        // Generate uid and treatmentGroupId first since they're interdependent
+        const uidNumber = helpers.getRandomInt(0, maxUID);
+        const uid = uidNumber.toString();
+        const treatmentGroupId = helpers.getTreatmentGroupId(uidNumber);
         
         // Extract Prolific parameters from query string
         const prolificUid = {};

@@ -17,6 +17,7 @@ const csvDB = {};
 let treatmentFroupConfigRecords;
 let userQuestionnaireRecords;
 let experimentDescRecords;
+let treatmentGroups;
 
 // read the csv files and store them in the csvDB
 // we use async createReadStream to parse records
@@ -43,6 +44,7 @@ async function readAllCsvFiles() {
     treatmentFroupConfigRecords = csvDB["treatment_groups_config.csv"];
     userQuestionnaireRecords = csvDB["questions_bank.csv"];
     experimentDescRecords = csvDB["experiment_desc.csv"];
+    treatmentGroups = Array.from(new Set(treatmentFroupConfigRecords.map(r => parseInt(r["treatment_group"]))));
 }
 
 let hiddenPromptsBank = {}
@@ -86,11 +88,8 @@ async function waitForSystemInitializiation() {
     console.log('System initialization completed successfully');
 }
 
-// Researchers choose the version by link (?v=<link_code>). Returns null for a missing or unknown code.
-function getTreatmentGroupIdForLinkCode(linkCode) {
-    const code = String(linkCode || "").trim().toLowerCase();
-    const record = treatmentFroupConfigRecords.find(r => r["link_code"] && r["link_code"].trim().toLowerCase() === code);
-    return record ? parseInt(record["treatment_group"]) : null;
+function getTreatmentGroupId(uid) { 
+    return treatmentGroups[(uid % treatmentGroups.length)];
 }
 
 // notice that in case we want to reproduce random numbers, we could add the flag --random_seed=42 (or whatever number) to the node command.
@@ -486,7 +485,7 @@ function generateUniqueCompletionCode() {
 
 module.exports = {
     waitForSystemInitializiation,
-    getTreatmentGroupIdForLinkCode,
+    getTreatmentGroupId,
     getRandomInt,
     createFullConversationPrompt,
     setSelectedHiddenPromptToSession,

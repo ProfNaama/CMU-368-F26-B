@@ -6,10 +6,9 @@ demographics,0,0,gender,What is your gender?,0,0,0,1,0,Female|Male|Non-binary|Ot
 demographics,0,0,education,What is the highest level of education you have completed?,0,0,0,1,0,"Some high school, no diploma|High school diploma or equivalent|Some college, no degree|Associate degree|Bachelor's degree|Master's degree|Doctorate degree|Prefer not to say",0
 demographics,0,0,ai_use,"How often do you use AI tools (for example, ChatGPT, Claude, or similar tools) in a typical week?",0,0,0,1,0,Never|Less than once a week|A few times a week|Once a day|Multiple times a day,0
 demographics,0,0,device,"On average, how many hours per day do you use digital devices such as a phone, laptop, or tablet?",0,0,0,1,0,Less than 1 hour|1 to 2 hours|3 to 4 hours|5 to 6 hours|7 to 8 hours|9 to 10 hours|More than 10 hours,0
-prior_skill,0,0,prior_skill_0,"The following questions ask about your experience with three types of tasks before this study. Please answer based on your experience in general.",0,0,0,0,1,,0
+prior_skill,0,0,prior_skill_0,"The following questions ask about your experience with two types of tasks before this study. Please answer based on your experience in general.",0,0,0,0,1,,0
 prior_skill,0,0,prior_skill_writing,"How would you describe your experience with writing tasks, such as writing essays, emails, reports, or short texts?",0,0,1,0,0,No experience at all|A great deal of experience,0
 prior_skill,0,0,prior_skill_coding,"How would you describe your experience with coding tasks, such as writing or editing computer code in any programming language?",0,0,1,0,0,No experience at all|A great deal of experience,0
-prior_skill,0,0,prior_skill_design,"How would you describe your experience with visual design tasks, such as creating images, graphics, layouts, or visual content?",0,0,1,0,0,No experience at all|A great deal of experience,0
 satisfaction_writing,0,0,satisfaction_writing_0,The following questions ask about the output from the writing task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,,0
 satisfaction_writing,0,0,satisfaction_writing_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied,0
 satisfaction_writing,0,0,satisfaction_writing_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well,0
@@ -18,19 +17,12 @@ satisfaction_coding,0,0,satisfaction_coding_0,The following questions ask about 
 satisfaction_coding,0,0,satisfaction_coding_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied,0
 satisfaction_coding,0,0,satisfaction_coding_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well,0
 satisfaction_coding,0,0,satisfaction_coding_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable,0
-satisfaction_design,0,0,satisfaction_design_0,The following questions ask about the output from the visual design task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,,0
-satisfaction_design,0,0,satisfaction_design_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied,0
-satisfaction_design,0,0,satisfaction_design_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well,0
-satisfaction_design,0,0,satisfaction_design_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable,0
 manipcheck_writing,0,0,manipcheck_writing_0,The following questions ask about how the AI behaved during the writing task. Please answer based on what actually happened.,0,0,0,0,1,,0
 manipcheck_writing,0,0,manipcheck_writing_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 manipcheck_writing,0,0,manipcheck_writing_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 manipcheck_coding,0,0,manipcheck_coding_0,The following questions ask about how the AI behaved during the coding task. Please answer based on what actually happened.,0,0,0,0,1,,0
 manipcheck_coding,0,0,manipcheck_coding_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 manipcheck_coding,0,0,manipcheck_coding_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree,0
-manipcheck_design,0,0,manipcheck_design_0,The following questions ask about how the AI behaved during the visual design task. Please answer based on what actually happened.,0,0,0,0,1,,0
-manipcheck_design,0,0,manipcheck_design_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree,0
-manipcheck_design,0,0,manipcheck_design_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 attention,0,0,attention_0,Please read each statement carefully before answering.,0,0,0,0,1,,0
 attention,0,0,attention_1,Select the far left option.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 attention,0,0,attention_2,Select the option that represents strongly agree.,0,0,1,0,0,Strongly disagree|Strongly agree,0
