@@ -2,11 +2,11 @@ block_name,allow_block_permutation,allow_question_permutation,question_name,ques
 demographics,0,0,demographic_0,,0,0,0,0,1,,0
 demographics,0,0,age,What is your age range?,0,0,0,1,0,18 to 24|25 to 34|35 to 44|45 to 54|55 or older|Prefer not to say,0
 demographics,0,0,occupation,Which of these best describes your current occupation?,0,0,0,1,0,Student|Employed full time|Employed part time|Self-employed|Not currently employed|Prefer not to say,0
-demographics,0,0,gender,What is your gender?,0,0,0,1,0,Female|Male|Non-binary|Other|Prefer not to say,0
+demographics,0,0,gender,What is your gender assigned at birth?,0,0,0,1,0,Female|Male|Prefer not to say,0
 demographics,0,0,education,What is the highest level of education you have completed?,0,0,0,1,0,"Some high school, no diploma|High school diploma or equivalent|Some college, no degree|Associate degree|Bachelor's degree|Master's degree|Doctorate degree|Prefer not to say",0
 demographics,0,0,ai_use,"How often do you use AI tools (for example, ChatGPT, Claude, or similar tools) in a typical week?",0,0,0,1,0,Never|Less than once a week|A few times a week|Once a day|Multiple times a day,0
 demographics,0,0,device,"On average, how many hours per day do you use digital devices such as a phone, laptop, or tablet?",0,0,0,1,0,Less than 1 hour|1 to 2 hours|3 to 4 hours|5 to 6 hours|7 to 8 hours|9 to 10 hours|More than 10 hours,0
-prior_skill,0,0,prior_skill_0,"The following questions ask about your experience with two types of tasks before this study. Please answer based on your experience in general.",0,0,0,0,1,,0
+prior_skill,0,0,prior_skill_0,The following questions ask about your experience with two types of tasks before this study. Please answer based on your experience in general.,0,0,0,0,1,,0
 prior_skill,0,0,prior_skill_writing,"How would you describe your experience with writing tasks, such as writing essays, emails, reports, or short texts?",0,0,1,0,0,No experience at all|A great deal of experience,0
 prior_skill,0,0,prior_skill_coding,"How would you describe your experience with coding tasks, such as writing or editing computer code in any programming language?",0,0,1,0,0,No experience at all|A great deal of experience,0
 satisfaction_writing,0,0,satisfaction_writing_0,The following questions ask about the output from the writing task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,,0
