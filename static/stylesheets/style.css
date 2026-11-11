@@ -476,28 +476,6 @@ ol {
     opacity: 1;
 }
 
-/* Progress bar at the top of every page. */
-.progress-label {
-    font-weight: 700;
-    font-size: 0.95rem;
-}
-
-.progress-track {
-    height: 10px;
-    padding: 0;
-    background-color: var(--gray);
-    border-radius: 999px;
-    overflow: hidden;
-}
-
-.progress-fill {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: #1f5fbf;
-    border-radius: 999px;
-}
-
 /* End page: the completion code stands out. */
 .completion-box {
     border: 2px solid #1a7f37;
