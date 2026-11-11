@@ -9,14 +9,38 @@ demographics,0,0,device,"On average, how many hours per day do you use digital d
 prior_skill,0,0,prior_skill_0,The following questions ask about your experience with two types of tasks before this study. Please answer based on your experience in general.,0,0,0,0,1,,0
 prior_skill,0,0,prior_skill_writing,"How would you describe your experience with writing tasks, such as writing essays, emails, reports, or short texts?",0,0,1,0,0,No experience at all|A great deal of experience,0
 prior_skill,0,0,prior_skill_coding,"How would you describe your experience with coding tasks, such as writing or editing computer code in any programming language?",0,0,1,0,0,No experience at all|A great deal of experience,0
-satisfaction_writing,0,0,satisfaction_writing_0,The following questions ask about the output from the writing task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,,0
-satisfaction_writing,0,0,satisfaction_writing_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied,0
-satisfaction_writing,0,0,satisfaction_writing_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well,0
-satisfaction_writing,0,0,satisfaction_writing_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable,0
-satisfaction_coding,0,0,satisfaction_coding_0,The following questions ask about the output from the coding task you just completed. Please answer based on how you actually feel. There are no right or wrong answers.,0,0,0,0,1,,0
-satisfaction_coding,0,0,satisfaction_coding_1,"Overall, how satisfied are you with the output from this task?",0,0,1,0,0,Very dissatisfied|Very satisfied,0
-satisfaction_coding,0,0,satisfaction_coding_2,How well does the output match what you were trying to achieve?,0,0,1,0,0,Not at all well|Very well,0
-satisfaction_coding,0,0,satisfaction_coding_3,"If you needed to use this output in a real situation, how would you feel about it?",0,0,1,0,0,Very uncomfortable|Very comfortable,0
+satisfaction_writing,0,0,satisfaction_writing_0,The following questions ask about your experience in the writing task you just completed. There are no right or wrong answers. First: how do you feel about your overall experience with the AI assistant?,0,0,0,0,1,,0
+satisfaction_writing,0,0,satisfaction_writing_1,,0,0,1,0,0,Very dissatisfied|Very satisfied,0
+satisfaction_writing,0,0,satisfaction_writing_2,,0,0,1,0,0,Very displeased|Very pleased,0
+satisfaction_writing,0,0,satisfaction_writing_3,,0,0,1,0,0,Very frustrated|Very contented,0
+satisfaction_writing,0,0,satisfaction_writing_4,,0,0,1,0,0,Absolutely terrible|Absolutely delighted,0
+satisfaction_writing,0,0,satisfaction_writing_5,"Overall, how satisfied or dissatisfied did the AI assistant leave you feeling?",0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
+satisfaction_writing,0,0,satisfaction_writing_6,How satisfied are you with the help the AI assistant gave you on this task?,0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
+satisfaction_writing,0,0,satisfaction_writing_7,How satisfied are you with the final result of your writing task?,0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
+satisfaction_coding,0,0,satisfaction_coding_0,The following questions ask about your experience in the coding task you just completed. There are no right or wrong answers. First: how do you feel about your overall experience with the AI assistant?,0,0,0,0,1,,0
+satisfaction_coding,0,0,satisfaction_coding_1,,0,0,1,0,0,Very dissatisfied|Very satisfied,0
+satisfaction_coding,0,0,satisfaction_coding_2,,0,0,1,0,0,Very displeased|Very pleased,0
+satisfaction_coding,0,0,satisfaction_coding_3,,0,0,1,0,0,Very frustrated|Very contented,0
+satisfaction_coding,0,0,satisfaction_coding_4,,0,0,1,0,0,Absolutely terrible|Absolutely delighted,0
+satisfaction_coding,0,0,satisfaction_coding_5,"Overall, how satisfied or dissatisfied did the AI assistant leave you feeling?",0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
+satisfaction_coding,0,0,satisfaction_coding_6,How satisfied are you with the help the AI assistant gave you on this task?,0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
+satisfaction_coding,0,0,satisfaction_coding_7,How satisfied are you with the final result of your coding task?,0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
+trust_ai,0,0,trust_ai_0,The following statements ask what you think about the AI assistant you just worked with. There are no right or wrong answers.,0,0,0,0,1,,0
+trust_ai,0,0,trust_ai_1,I think the AI assistant has the functionality I need.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+trust_ai,0,0,trust_ai_2,The AI assistant has the features required for my task.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+trust_ai,0,0,trust_ai_3,The AI assistant has the ability to do what I want it to do.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+trust_ai,0,0,trust_ai_4,"Overall, the AI assistant has the capabilities I need.",0,0,1,0,0,Strongly disagree|Strongly agree,0
+trust_ai,0,0,trust_ai_5,I think the AI assistant is very reliable.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+trust_ai,0,0,trust_ai_6,The AI assistant is not going to fail me.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+trust_ai,0,0,trust_ai_7,"To me, the AI assistant is extremely dependable.",0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_0,The following statements ask how you felt while using the AI assistant. There are no right or wrong answers.,0,0,0,0,1,,0
+stress_ai,0,0,stress_ai_1,I found it too complicated to accomplish my task using the AI assistant.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_2,I felt that the AI assistant was too confusing.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_3,"Because of the AI assistant, I had too much to do.",0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_4,"Because of the AI assistant, I had too large a variety of different things to do.",0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_5,I think that I lost too much time because of problems with the AI assistant.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_6,I think that I spent too much time trying to fix problems with the AI assistant.,0,0,1,0,0,Strongly disagree|Strongly agree,0
+stress_ai,0,0,stress_ai_7,I think that I did not gain enough benefit from using the AI assistant for my task.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 manipcheck_writing,0,0,manipcheck_writing_0,The following questions ask about how the AI behaved during the writing task. Please answer based on what actually happened.,0,0,0,0,1,,0
 manipcheck_writing,0,0,manipcheck_writing_1,The AI offered ideas or suggestions without me asking for them.,0,0,1,0,0,Strongly disagree|Strongly agree,0
 manipcheck_writing,0,0,manipcheck_writing_2,I was the one who decided what the AI would do next.,0,0,1,0,0,Strongly disagree|Strongly agree,0
