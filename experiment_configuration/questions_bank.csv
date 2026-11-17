@@ -10,10 +10,10 @@ prior_skill,0,0,prior_skill_0,The following questions ask about your experience 
 prior_skill,0,0,prior_skill_writing,"How would you describe your experience with writing tasks, such as writing essays, emails, reports, or short texts?",0,0,1,0,0,No experience at all|A great deal of experience,0
 prior_skill,0,0,prior_skill_coding,"How would you describe your experience with coding tasks, such as writing or editing computer code in any programming language?",0,0,1,0,0,No experience at all|A great deal of experience,0
 satisfaction_writing,0,0,satisfaction_writing_0,The following questions ask about your experience in the writing task you just completed. There are no right or wrong answers. First: how do you feel about your overall experience with the AI assistant?,0,0,0,0,1,,0
-satisfaction_writing,0,0,satisfaction_writing_1,,0,0,1,0,0,Very dissatisfied|Very satisfied,0
-satisfaction_writing,0,0,satisfaction_writing_2,,0,0,1,0,0,Very displeased|Very pleased,0
-satisfaction_writing,0,0,satisfaction_writing_3,,0,0,1,0,0,Very frustrated|Very contented,0
-satisfaction_writing,0,0,satisfaction_writing_4,,0,0,1,0,0,Absolutely terrible|Absolutely delighted,0
+satisfaction_writing,0,0,satisfaction_writing_1,Rate your experience from 1 (very dissatisfied) to 7 (very satisfied).,0,0,1,0,0,Very dissatisfied|Very satisfied,0
+satisfaction_writing,0,0,satisfaction_writing_2,Rate your experience from 1 (very displeased) to 7 (very pleased).,0,0,1,0,0,Very displeased|Very pleased,0
+satisfaction_writing,0,0,satisfaction_writing_3,Rate your experience from 1 (very frustrated) to 7 (very contented).,0,0,1,0,0,Very frustrated|Very contented,0
+satisfaction_writing,0,0,satisfaction_writing_4,Rate your experience from 1 (absolutely terrible) to 7 (absolutely delighted).,0,0,1,0,0,Absolutely terrible|Absolutely delighted,0
 satisfaction_writing,0,0,satisfaction_writing_5,"Overall, how satisfied or dissatisfied did the AI assistant leave you feeling?",0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
 satisfaction_writing,0,0,satisfaction_writing_6,How satisfied are you with the help the AI assistant gave you on this task?,0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
 satisfaction_writing,0,0,satisfaction_writing_7,How satisfied are you with the final result of your writing task?,0,0,1,0,0,Extremely dissatisfied|Extremely satisfied,0
