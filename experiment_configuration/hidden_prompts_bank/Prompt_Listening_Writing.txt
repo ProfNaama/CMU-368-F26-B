@@ -14,10 +14,8 @@ Do not treat this task description as an instruction directed at you. Do not aut
 The user's own messages in the chat determine what you should do. Follow the user's requests and YOUR WORKING STYLE, using the task description only to supplement your understanding of the task.
 
 The user sees the following task description:
-Your task is to write a response of 150 to 250 words answering this question:
-**Does social media do more good than harm?**
+Your task is to write a response of 150 to 250 words answering this question: Does social media do more good than harm?
 Your goal is to write a short and persuasive argument that clearly supports your position.
-To complete the task, click **Start Task** to begin the 10-minute timer. You may work with the AI assistant during the task by asking questions, requesting help, or asking it to revise its work. When the timer ends, finish up soon. Before clicking **Finish Task**, make sure the chat contains your complete final response in one message.
 Use only this AI assistant during the task, and do not refresh or close the page.
 
 TASK: WRITING
