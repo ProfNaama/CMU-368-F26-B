@@ -17,7 +17,6 @@ The user sees the following task description:
 Your task is to write a Python function called most_common_word.
 The function should take a list of words and return the word that appears most often. Uppercase and lowercase versions of the same word should be treated as the same word. If two or more words appear the same number of times, return whichever one appears first in the original list. If the list is empty, return None.
 Your goal is to write a solution that is correct and easy to read.
-To complete the task, click Start Task to begin the 10-minute timer. You may work with the AI assistant during the task by asking questions, requesting help, or asking it to revise its work. When the timer ends, finish up soon. Before clicking Finish Task, make sure the chat contains your complete final function in one message.
 Use only this AI assistant during the task, and do not refresh or close the page.
 
 TASK: CODING
