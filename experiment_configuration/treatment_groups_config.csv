@@ -1,5 +1,5 @@
 treatment_group,user_name,user_avatar,agent_name,agent_avatar,hidden_prompt,user_task_description,user_pre_questions,user_post_questions
-1,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Leading_Writing.txt,task_writing.html,,satisfaction_writing;trust_ai;stress_ai;manipcheck_writing;attention;demographics;prior_skill;comments
-2,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Listening_Writing.txt,task_writing.html,,satisfaction_writing;trust_ai;stress_ai;manipcheck_writing;attention;demographics;prior_skill;comments
-3,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Leading_Coding.txt,task_coding.html,,satisfaction_coding;trust_ai;stress_ai;manipcheck_coding;attention;demographics;prior_skill;comments
-4,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Listening_Coding.txt,task_coding.html,,satisfaction_coding;trust_ai;stress_ai;manipcheck_coding;attention;demographics;prior_skill;comments
+1,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Leading_Writing.txt,task_writing.html,,satisfaction;satisfaction_writing;trust_ai;manipcheck_writing;demographics;prior_skill;comments
+2,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Listening_Writing.txt,task_writing.html,,satisfaction;satisfaction_writing;trust_ai;manipcheck_writing;demographics;prior_skill;comments
+3,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Leading_Coding.txt,task_coding.html,,satisfaction;satisfaction_coding;trust_ai;manipcheck_coding;demographics;prior_skill;comments
+4,User,user_avatar_01.png,Alex,agent_avatar_1.png,Prompt_Listening_Coding.txt,task_coding.html,,satisfaction;satisfaction_coding;trust_ai;manipcheck_coding;demographics;prior_skill;comments
